@@ -1,0 +1,235 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+body {
+
+    text-align: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-clip: padding-box;
+}
+
+h1 {
+    margin: 6rem auto 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 3rem;
+    color: rgba(157, 236, 236, 0.8);
+    
+}
+
+h2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 100;
+    font-size: 4rem;
+    color: rgba(149, 158, 158, 0.7);
+    s
+    
+}
+.clock-body {
+    background-color: rgba(63, 37, 65, 0.5);
+    width: 50%;
+    height: 15rem;
+    margin: 0 auto;
+    padding: 2rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px black;
+    border-radius: 2%;
+    min-width: 400px;
+}
+
+.clock-face {
+    display: flex;
+    background-color: rgba(6, 22, 22, 0.5);
+    width: 96%;
+    height: 96%;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 2%;
+    border: solid 3px rgba(149, 158, 158, 0.7);
+    min-width: 322px;
+
+}
+.top-row {
+    display: flex;
+    justify-content: space-between;
+    width: 98%;
+    margin-top: 1%;
+    
+}
+
+.date {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 100;
+    font-size: 2rem;
+    color: rgba(93, 100, 100, 0.8)
+}
+
+.currently {
+    margin: 1rem;
+    font-size: 2.5rem;
+}
+
+.season {
+    height: 2rem;
+    opacity: 0.05;
+    border-radius: 100%;
+    border: 2px solid grey;
+    
+}
+
+.active {
+    opacity: 0.8;
+}
+
+.watch-face {
+    height: 5rem;
+    border: solid 3px rgba(224, 224, 224, 0.2);
+    background-image: url('images/clock.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-clip: padding-box;
+    z-index: 0;
+    width: 5rem;
+    border-radius: 100%;
+    margin-bottom: .5rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    
+}
+
+.second {
+    position: absolute;
+    height: 48%;
+    border: solid .25px rgb(92, 91, 91);
+   width: .25px;
+   
+   transform-origin: bottom;
+   z-index: 1;
+}
+
+.minute {
+    position: absolute;
+    height: 34%;
+    border: solid .25px rgb(10, 10, 10);
+   width: .5px;
+   transform-origin: bottom;
+   z-index: 1;
+   margin-top: .75rem;
+}
+
+.hour {
+    position: absolute;
+    height: 25%;
+    border: solid .25px rgb(10, 10, 10);
+   width: 2px;
+   transform-origin: bottom;
+   z-index: 1;
+   margin-top: 1.25rem;
+}
+.crown {
+   position: absolute;
+   height: 5%;
+   width: 5%;
+   z-index: 2;
+   border-radius: 100%;
+   background-color: rgb(3, 3, 3);
+   align-self: center;
+  
+}
+
+/* @media only screen and (max-width: 700) {
+    h2 {
+        font-size: 3rem;
+    }
+} */
