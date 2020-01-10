@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<svg viewBox="6.624 0.697 811.751 304.606" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="4.326 -3.164 869.766 313.344" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <radialGradient gradientUnits="userSpaceOnUse" cx="63.792" cy="51.923" r="161.052" id="gradient-0" gradientTransform="matrix(1.877177, 2.149691, -2.19704, 0.353061, 58.119999, -103.542086)">
-      <stop offset="0" style="stop-color: rgb(255, 120, 120);"/>
-      <stop offset="1" style="stop-color: rgb(107, 107, 107);"/>
-    </radialGradient>
-    <radialGradient gradientUnits="userSpaceOnUse" cx="218.828" cy="230.089" r="161.052" id="gradient-1">
-      <stop offset="0" style="stop-color: rgb(111, 89, 89);"/>
-      <stop offset="1" style="stop-color: rgb(53, 3, 3);"/>
+    <radialGradient gradientUnits="userSpaceOnUse" cx="218.828" cy="230.089" r="161.052" id="gradient-1" spreadMethod="reflect" gradientTransform="matrix(-0.018204, 1.349583, -2.346124, -0.001377, 762.628784, -52.659949)">
+      <stop offset="0" style="stop-color: rgb(26, 26, 26);"/>
+      <stop offset="1" style=""/>
     </radialGradient>
   </defs>
   <g transform="matrix(0, -0.925004, 2.170176, -0.00523, -70.863907, 358.802124)" style="filter: none;">
-    <path d="M 92.686 408.54 C 76.031 408.485 59.333 397.464 59.325 377.815 C 60.058 359.934 60.006 79.075 60.475 70.425 C 60.961 46.475 76.043 37.436 93.836 37.376 C 118.405 37.134 326.686 37.031 344.616 37.376 C 364.619 37.259 381.268 46.398 381.428 70.425 C 381.413 89.693 381.233 363.335 381.428 379.305 C 381.483 396.409 365.762 409.203 347.172 408.541 C 333.236 408.203 102.032 408.413 92.682 408.541 L 92.686 408.54 Z" fill-rule="evenodd" style="fill-opacity: 0.8; vector-effect: non-scaling-stroke; stroke-width: 6px; stroke: url(#gradient-0); fill: url(#gradient-1);"/>
+    <path d="M 92.686 432.152 C 52.948 432.387 59.333 420.372 59.325 399.473 C 60.058 380.454 60.006 81.729 60.475 72.529 C 60.961 47.055 56.872 37.255 93.836 37.378 C 118.386 37.255 326.685 37.634 344.616 37.378 C 393.09 36.766 381.268 46.973 381.428 72.529 C 381.413 93.023 381.233 384.072 381.428 401.057 C 381.483 419.25 387.747 431.79 347.172 432.153 C 333.258 432.28 102.032 432.017 92.682 432.153 L 92.686 432.152 Z" fill-rule="evenodd" style="fill-opacity: 0.8; fill: url(#gradient-1); stroke: rgb(155, 155, 155); stroke-width: 17px; stroke-linecap: round; stroke-linejoin: bevel; vector-effect: non-scaling-stroke;"/>
   </g>
 </svg>
