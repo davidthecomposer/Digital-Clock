@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <svg viewBox="4.326 -3.164 869.766 313.344" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <radialGradient gradientUnits="userSpaceOnUse" cx="218.828" cy="230.089" r="161.052" id="gradient-1" spreadMethod="reflect" gradientTransform="matrix(-0.018204, 1.349583, -2.346124, -0.001377, 762.628784, -52.659949)">
-      <stop offset="0" style="stop-color: rgb(26, 26, 26);"/>
-      <stop offset="1" style=""/>
-    </radialGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="220.77" y1="37.352" x2="220.77" y2="432.189" id="gradient-0" gradientTransform="matrix(0.953274, -0.129751, 0.730282, 0.97325, -163.57801, 35.297108)">
+      <stop offset="0" style=""/>
+      <stop offset="1" style="stop-color: rgb(195, 195, 195);"/>
+    </linearGradient>
   </defs>
   <g transform="matrix(0, -0.925004, 2.170176, -0.00523, -70.863907, 358.802124)" style="filter: none;">
-    <path d="M 92.686 432.152 C 52.948 432.387 59.333 420.372 59.325 399.473 C 60.058 380.454 60.006 81.729 60.475 72.529 C 60.961 47.055 56.872 37.255 93.836 37.378 C 118.386 37.255 326.685 37.634 344.616 37.378 C 393.09 36.766 381.268 46.973 381.428 72.529 C 381.413 93.023 381.233 384.072 381.428 401.057 C 381.483 419.25 387.747 431.79 347.172 432.153 C 333.258 432.28 102.032 432.017 92.682 432.153 L 92.686 432.152 Z" fill-rule="evenodd" style="fill-opacity: 0.8; fill: url(#gradient-1); stroke: rgb(155, 155, 155); stroke-width: 17px; stroke-linecap: round; stroke-linejoin: bevel; vector-effect: non-scaling-stroke;"/>
+    <path d="M 92.686 432.152 C 52.948 432.387 59.333 420.372 59.325 399.473 C 60.058 380.454 60.006 81.729 60.475 72.529 C 60.961 47.055 56.872 37.255 93.836 37.378 C 118.386 37.255 326.685 37.634 344.616 37.378 C 393.09 36.766 381.268 46.973 381.428 72.529 C 381.413 93.023 381.233 384.072 381.428 401.057 C 381.483 419.25 387.747 431.79 347.172 432.153 C 333.258 432.28 102.032 432.017 92.682 432.153 L 92.686 432.152 Z" fill-rule="evenodd" style="stroke-linecap: round; stroke-linejoin: bevel; vector-effect: non-scaling-stroke; fill-opacity: 0.89; fill: rgb(255, 255, 255); stroke: url(#gradient-0); stroke-width: 15px;"/>
   </g>
 </svg>
