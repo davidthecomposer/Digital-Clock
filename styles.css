@@ -108,11 +108,12 @@ h2 {
     font-weight: 100;
     font-size: 4rem;
     color: rgba(149, 158, 158, 0.7);
-    s
-    
 }
+
 .clock-body {
-    background-color: rgba(63, 37, 65, 0.5);
+    background-image: url('images/clock-face.svg');
+    background-size: fill;
+    background-repeat: no-repeat;
     width: 50%;
     height: 15rem;
     margin: 0 auto;
@@ -120,7 +121,7 @@ h2 {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    border: solid 1px black;
+    border: none;
     border-radius: 2%;
     min-width: 400px;
 }
@@ -136,14 +137,13 @@ h2 {
     border-radius: 2%;
     border: solid 3px rgba(149, 158, 158, 0.7);
     min-width: 322px;
-
 }
+
 .top-row {
     display: flex;
     justify-content: space-between;
     width: 98%;
-    margin-top: 1%;
-    
+    margin-top: 1%;  
 }
 
 .date {
@@ -163,7 +163,6 @@ h2 {
     opacity: 0.05;
     border-radius: 100%;
     border: 2px solid grey;
-    
 }
 
 .active {
@@ -184,8 +183,6 @@ h2 {
     position: relative;
     display: flex;
     justify-content: center;
-
-    
 }
 
 .second {
@@ -193,7 +190,6 @@ h2 {
     height: 48%;
     border: solid .25px rgb(92, 91, 91);
    width: .25px;
-   
    transform-origin: bottom;
    z-index: 1;
 }
@@ -217,6 +213,7 @@ h2 {
    z-index: 1;
    margin-top: 1.25rem;
 }
+
 .crown {
    position: absolute;
    height: 5%;
@@ -225,7 +222,6 @@ h2 {
    border-radius: 100%;
    background-color: rgb(3, 3, 3);
    align-self: center;
-  
 }
 
 /* @media only screen and (max-width: 700) {
