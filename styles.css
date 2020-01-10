@@ -128,7 +128,7 @@ h2 {
 
 .clock-face {
     display: flex;
-    background-color: rgba(6, 22, 22, 0.5);
+    background-color: rgba(6, 22, 22, 0.87);
     width: 96%;
     height: 96%;
     justify-content: space-around;
