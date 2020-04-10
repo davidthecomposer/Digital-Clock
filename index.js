@@ -1,12 +1,14 @@
 /*jshint esversion: 6 */
-let date = document.querySelector('.date');
-let time = document.querySelector('.time');
-let body = document.querySelector('body');
-let secondHand = document.querySelector('.second');
-let minuteHand = document.querySelector('.minute');
-let hourHand = document.querySelector('.hour');
+
+
+
 
 const resetClock = () => {
+    const date = document.querySelector('.date');
+    const time = document.querySelector('.time');
+    const secondHand = document.querySelector('.second');
+    const minuteHand = document.querySelector('.minute');
+    const hourHand = document.querySelector('.hour');
     let currentDate = new Date();
     let seconds = currentDate.getSeconds();
     let minutes = currentDate.getMinutes();
@@ -20,7 +22,7 @@ const resetClock = () => {
     } else {
         hourHand.style.transform = `rotate(${(hours  - 12 )* 30 + minutes/2}deg)`;
     }
-    
+
     setTimeout(resetClock, 1000);
 };
 
@@ -29,7 +31,7 @@ const resetTimeOfDay = () => {
     let locale = document.querySelector('.currently');
     let testDate = new Date();
     let hour = testDate.getHours();
-
+    let body = document.querySelector('body');
 
     switch (true) {
         case hour < 6:
@@ -98,8 +100,8 @@ switchSeason();
 /* More  ideas : 
 
 Different pictures for each hour of the day: Could I take them?
-Change clock color subtley with each picture change.
-Add something that comes up on major holidays. Could I make an object or ise a database?
+Change clock color subtly with each picture change.
+Add something that comes up on major holidays. Could I make an object or use an API?
 user input of birthdays or special events?
 update gui
 

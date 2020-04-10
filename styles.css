@@ -1,161 +1,75 @@
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
 
 body {
-
-    text-align: center;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-clip: padding-box;
-}
-
-h1 {
-    margin: 6rem auto 1rem;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 3rem;
-    color: rgba(157, 236, 236, 0.8);
+    display: flex;
+    flex-direction: column;
+    background: no-repeat center center fixed;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     
 }
 
-h2 {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: 100;
-    font-size: 4rem;
-    color: rgba(149, 158, 158, 0.7);
+h1 {
+    margin: 4rem auto 4rem;
+    font-size: 3rem;
+    color: rgba(157, 236, 236, 0.8);
 }
 
-.clock-body {
-    background-image: url('images/clock-face.svg');
-    background-size: fill;
-    background-repeat: no-repeat;
-    width: 50%;
-    height: 15rem;
-    margin: 0 auto;
-    padding: 2rem;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    border-radius: 2%;
-    min-width: 400px;
+h2 { 
+    font-weight: 100;
+    font-size: 4rem;
+    color: rgba(149, 158, 158, 0.7); 
 }
 
 .clock-face {
     display: flex;
     background-color: rgba(6, 22, 22, 0.87);
-    width: 96%;
-    height: 96%;
+    width: 50%;
+    position: relative;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    border-radius: 2%;
-    border: solid 3px rgba(149, 158, 158, 0.7);
+    border-radius: 1%;
     min-width: 322px;
+    margin: 0 auto;
+}
+
+.time {
+    color: rgb(250, 202, 250);
 }
 
 .top-row {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: relative;
     width: 98%;
     margin-top: 1%;  
+    z-index: 3;
 }
 
-.date {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+.date {  
     font-weight: 100;
     font-size: 2rem;
     color: rgba(93, 100, 100, 0.8)
-}
-
-.currently {
-    margin: 1rem;
-    font-size: 2.5rem;
 }
 
 .season {
@@ -170,14 +84,13 @@ h2 {
 }
 
 .watch-face {
-    height: 5rem;
-    border: solid 3px rgba(224, 224, 224, 0.2);
-    background-image: url('images/clock.jpg');
-    background-size: 100%;
+    height: 8rem;
+    width: 8rem;
+    background-image: url('images/clock.png');
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     background-clip: padding-box;
     z-index: 0;
-    width: 5rem;
     border-radius: 100%;
     margin-bottom: .5rem;
     position: relative;
@@ -188,44 +101,70 @@ h2 {
 .second {
     position: absolute;
     height: 48%;
-    border: solid .25px rgb(92, 91, 91);
-   width: .25px;
+    background-color: rgb(255, 0, 0);
+   width: 1px;
    transform-origin: bottom;
    z-index: 1;
+   margin-top: 2%;
 }
 
 .minute {
     position: absolute;
     height: 34%;
-    border: solid .25px rgb(10, 10, 10);
-   width: .5px;
+    background-color: rgb(81, 255, 0);
+   width: 2px;
    transform-origin: bottom;
    z-index: 1;
-   margin-top: .75rem;
+   margin-top: 16%;
 }
 
 .hour {
     position: absolute;
     height: 25%;
-    border: solid .25px rgb(10, 10, 10);
-   width: 2px;
+  
+    background-color:  rgb(251, 255, 0);
+   width: 4px;
    transform-origin: bottom;
    z-index: 1;
-   margin-top: 1.25rem;
+   margin-top: 25%;
 }
 
 .crown {
    position: absolute;
-   height: 5%;
-   width: 5%;
+   height: 7%;
+   width: 7%;
    z-index: 2;
    border-radius: 100%;
-   background-color: rgb(3, 3, 3);
+   background-image: radial-gradient(yellow, blue);
    align-self: center;
 }
 
-/* @media only screen and (max-width: 700) {
+
+.by-me {
+    position: absolute;
+    display: flex;
+    right: 2%;
+    top: 6px;
+  }
+  
+  .by-me p {
+    padding: 0 .75rem;
+    align-self: center;
+    color: white;
+    
+  }
+  .signature {
+    height: 3rem;
+  }
+
+
+@media only screen and (max-width: 700px) {
     h2 {
         font-size: 3rem;
     }
-} */
+
+    h1 {
+        font-size: 2rem;
+    }
+    
+}
