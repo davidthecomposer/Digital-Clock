@@ -1,46 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Digital Clock</title>
+		<link
+			href="https://fonts.googleapis.com/css?family=Girassol|Poiret+One&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="/Favicon/apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="/Favicon/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="/Favicon/favicon-16x16.png"
+		/>
+		<link rel="manifest" href="/Favicon/site.webmanifest" />
+		<link
+			rel="mask-icon"
+			href="/Favicon/safari-pinned-tab.svg"
+			color="#143a51"
+		/>
+		<meta name="msapplication-TileColor" content="#143a51" />
+		<meta name="theme-color" content="#ffffff" />
+		<link rel="stylesheet" href="styles.css" />
+	</head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Daves Digital Clock</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+	<body>
+		<div class="clock-face">
+			<div class="top-row">
+				<img class="season winter" src="images/winter.png" alt="winter" />
+				<img class="season spring" src="images/Spring.png" alt="spring" />
+				<h2 class="date">Date Time etc</h2>
+				<img class="season summer" src="images/summer.png" alt="summer" />
+				<img class="season fall" src="images/fall.png" alt="fall" />
+			</div>
 
-<body>
-    <h1 id="locale">Local Time:</h1>
-   
-    
-        <div class="clock-face">
-            <div class="top-row">
-                <img class='season winter' src="images/winter.png" alt="winter">
-                <img class='season spring' src="images/Spring.png" alt="spring">
-                <h2 class='date'>Date Time etc</h2>
-                <img class='season summer' src="images/summer.png" alt="summer">
-                <img class='season fall' src="images/fall.png" alt="fall">
-            </div>
-            <h2 class='time'>Date Time etc</h2>
-            <div class="watch-face">
-                <div class="second"></div>
-                <div class="minute"></div>
-                <div class="hour"></div>
-                <div class='crown'></div>
-            </div>
-        </div>
-    
+			<div class="main-info-row">
+				<div class="weather-container">
+					<div class="location-container">
+						<h3 class="currently">It is currently: Afternoon</h3>
+						<h3 class="location-text"></h3>
+					</div>
+					<div class="weather-body">
+						<div class="weather-header">
+							<h1 class="temp"></h1>
+							<div class="weather-icon-container">
+								<img class="weather-icon" />
+								<h3 class="weather-description"></h3>
+							</div>
+						</div>
 
-    <h1 class="currently">It is currently: Afternoon in SLC</h1>
+						<div class="weather-info">
+							<div class="weather-titles">
+								<h3>Humidity:</h3>
+								<h3>UV-Index:</h3>
+								<h3>Sunrise:</h3>
+								<h3>Sunset:</h3>
+							</div>
+							<div class="weather-data">
+								<h3 class="humidity"></h3>
+								<h3 class="uvi"></h3>
+								<h3 class="sunrise"></h3>
+								<h3 class="sunset"></h3>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="time-column">
+					<h2 class="time"></h2>
 
+					<div class="watch-face">
+						<div class="second"></div>
+						<div class="minute"></div>
+						<div class="hour"></div>
+						<div class="crown"></div>
+					</div>
+				</div>
 
-    <div class="by-me">
-        <p>A</p>
-        <img class="signature" src="/David Campbell Website/images/main/david-sig-white.svg" alt="">
-        <p>Project</p>
-    </div>
-    <script src="index.js"></script>
+				<div class="article-container">
+					<a href="" class="link-to-article">
+						<h3 class="article-title"></h3>
+					</a>
 
-</body>
+					<div class="article-content">
+						<div class="article-author"></div>
+					</div>
+				</div>
+			</div>
+		</div>
 
+		<div class="by-me">
+			<p>a</p>
+			<img
+				class="signature"
+				src="../colorSelector/images/white-signature.png"
+				alt=""
+			/>
+			<p>project</p>
+		</div>
+		<script src="index.js" type="module"></script>
+	</body>
 </html>
